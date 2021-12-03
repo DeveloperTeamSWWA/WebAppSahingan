@@ -1,0 +1,9 @@
+{
+    "require": {
+        "kreait/firebase-php": "^5.23",
+        "guzzlehttp/guzzle": "^6.4",
+        
+        "messagebird/php-rest-api": "^2.0"
+      
+    }
+}

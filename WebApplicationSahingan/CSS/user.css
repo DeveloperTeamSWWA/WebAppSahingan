@@ -1,0 +1,375 @@
+body{
+  background-color:white;
+ 
+}
+
+.searchTerm {
+width: 200px;
+  height: 50px;
+  border: 3px solid#009879;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+  color: #9DBFAF;
+
+  
+}
+
+.searchTerm:focus{
+  color:#00987b;
+}
+
+.insertbtn{
+  
+  width: 200px;
+  height: 70px;
+
+  border: 1px solid#009879;
+  background: #009879;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.QRbtn{
+  
+  width: 100px;
+  height: 50;
+
+  border: 1px solid#0047AB;
+  background: #0047AB;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.editbtn{
+  
+  width: 200px;
+  height: 70px;
+
+  border: 1px solid chocolate;
+  background-color: chocolate;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.deletebtn{
+  width: 200px;
+  height: 70px;
+
+  border: 1px solid#d80a03;
+  background: #d80a03;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.wrapqr{
+
+  width: 16.5%;
+  height:16%;
+  position: absolute;
+  top: 68%;
+  left: 13.2%;
+  transform: translate(-50%, -50%);
+   
+ }
+
+.wrapinsert{
+  
+  width: 30%;
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+   
+ }
+ .wrapsearchtxt{
+  
+  height: 40px;
+  width: 30%;
+top: 12%;
+left: 5%;
+  position: absolute;
+
+
+  
+   
+ }
+ .searchtxt {
+  width: 70%;
+  height: 35px;
+  border: 3px solid#009879;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+  
+}
+.searchbtn {
+ 
+  height: 35px;
+  border: 3px solid#009879;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  color: #08311e;
+  
+}
+.backbtn {
+ 
+  height: 40px;
+  width: 60;
+  border: 3px solid#009879;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+  color: #08311e;
+  
+}
+
+.wrapback{
+  
+  
+  width: 30%;
+  position: absolute;
+  top:6%;
+  left:20%;
+  transform: translate(-50%, -50%);
+ }
+
+ 
+ .wrapedit{
+  
+  
+  width: 30%;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ .wrapdelete{
+  
+  
+  width: 30%;
+  position: absolute;
+  top: 85%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+ }
+ .logo{
+  width: 60px;
+  height:60px;
+ 
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  float:left;
+  margin-left: 110px;
+ 
+ }
+ .wraperror{
+  
+  width:40%;
+  
+   position: absolute;
+   top: 68%;
+   left: 44%;
+   text-align: center;
+   transform: translate(-50%, -50%);
+ }
+.wrapc{
+  
+
+  width: 30%;
+  position: absolute;
+  top: 42%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.wrapf{
+ 
+ 
+  width: 30%;
+  position: absolute;
+  top: 42%;
+  left: 40%;
+transform: translate(-50%, -50%);
+}
+.wrapl{
+
+
+  width: 30%;
+  position: absolute;
+  top: 42%;
+  left: 60%;
+transform: translate(-50%, -50%);
+}
+
+.wrapp{
+
+  width: 30%;
+  position: absolute;
+  top: 54%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.wraps{
+  
+  width: 30%;
+  position: absolute;
+  top: 42%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.wrape{
+  
+  width: 30%;
+  position: absolute;
+  top: 60%;
+  left: 23.5%;
+transform: translate(-50%, -50%);
+}
+
+.wrapcontact{
+  width: 30%;
+  position: absolute;
+  top: 54%;
+  left: 20%;
+transform: translate(-50%, -50%);
+}
+.wrapuser{
+  
+  width: 30%;
+  position: absolute;
+  top: 54%;
+  left: 40%;
+transform: translate(-50%, -50%);
+}
+.wraptable{
+ 
+width: 77.8%;
+height: 5%;
+position: absolute;
+top: 20%;
+left: 43.5%;
+
+transform: translate(-50%, -50%);
+}
+
+
+ .home{
+  width: 100px;
+  height: 30px;
+  border: 1px solid#009879;
+  background: #009879;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.wraphome{
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  left:20%;
+  transform: translate(-50%, -50%);
+}
+.buttondiv{
+ 
+ 
+  height: 557px;
+  width: 250px;
+  float:left;
+  background-color: #009879;
+  border-radius: 0;
+ 
+}
+.button{
+width: 250px;
+height: 79.5px;
+border: 1px solid#009879;
+background: #009879;
+text-align: center;
+color: #fff;
+border-radius: 5px;
+cursor: pointer;
+font-size: 25px;
+
+}
+.button:hover {
+
+background-color: white;
+background-color: #1295F0;
+
+}
+.content-table {
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 0.9em;
+min-width: 400px;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.content-table thead tr {
+background-color: #009879;
+color: #ffffff;
+text-align: left;
+font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+padding: 12px 15px;
+height: 30px;
+}
+
+.content-table tbody tr {
+border-bottom: 1px solid black;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+background-color: black;;
+}
+
+.content-table tbody tr:last-of-type {
+border-bottom: 1px solid black;;
+}
+
+.content-table tbody tr.active-row {
+font-weight: bold;
+color: #009879;
+}
+
+
+.content-table td:not(:first-child){
+cursor: pointer;transition: all .25s ease-in-out;
+}
+.content-table td:not(:first-child):hover{background-color: #FE4F2F;}
+
+.inputs{
+
+background: linear-gradient( #6CDDFC,white );
+position: absolute;
+position: relative;
+height: 557px;
+margin-left: 20%;
+
+
+
+}
+.header{
+border: 3px solid#009879;
+  height: 100px;
+}
