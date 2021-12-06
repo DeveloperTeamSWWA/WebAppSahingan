@@ -50,23 +50,25 @@ if(isset($_POST['pay'])){
     $newprevread = trim(ucwords($newprev_reading));
     $newsitio = trim(ucwords($sitio));
 
+    $intcash = intval($cash);
+    $inttotal = intval($total);
+
     if(empty($Fname) || empty($balance)){
         $message = '<label class="text-danger">Please search ID and click the table!</label>';
         
-    }else{
-        if($total == 0){
-            $message = '<label class="text-danger">You are already paid!</label>';
-        }else{
-   if(empty($cash)){
-    $message = '<label class="text-danger">Please input cash!</label>';
-   }
-   else{
-       if($cash < $total ){
-        $message = '<label class="text-danger">Invalid cash!</label>';
-       }else{
-       
-    $database->getReference("Members/" . $ID )
-    ->set([
+    }
+    if($inttotal == 0){
+        $message = '<label class="text-danger">You are already paid!</label>';
+    }
+    if(empty($intcash)){
+        $message = '<label class="text-danger">Please input cash!</label>';
+    }
+    if($intcash < $inttotal){
+        $message = '<label class="text-danger">Insufficient amount!</label>';
+    }
+    if($intcash >= $inttotal){
+        $database->getReference("Members/" . $ID )
+        ->set([
     
         'Firstname' => $newfname,
         'Lastname' => $newlname,
@@ -82,9 +84,6 @@ if(isset($_POST['pay'])){
          'Penalty' => "0",
          'Meter_Status' => "Working",
          'Password' => $newcontact,
-         
-      
-      
          
        ]);
        
@@ -122,12 +121,7 @@ if(isset($_POST['pay'])){
        $pdf->Cell(30, 8, $change, 1, 1,'C');
        $pdf->Output('D',$Fname.date("Y/m/d").'.pdf');
 
-       
     }
-    
-    }
-}
-}
 }
 
 ?>
