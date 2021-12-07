@@ -109,7 +109,7 @@ if(isset($_POST['edit'])){
     empty($_POST['address2']) ||empty($_POST['contacts2'])){
 
        
-        if(empty($_POST['member_ID']) ||empty($_POST['fname']) ||empty($_POST['lname']) ||empty($_POST['contacts'])){
+        if(empty($_POST['user_ID']) ||empty($_POST['fname']) ||empty($_POST['lname']) ||empty($_POST['contacts'])){
             $message = '<label class="text-danger">Please search User_ID and click the table!</label>';
         }
         else if($as == "---Select---"){
