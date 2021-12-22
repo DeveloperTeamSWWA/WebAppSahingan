@@ -1,10 +1,10 @@
 <?php
 
-include('forgotbackend.php');
+include('resetbackend.php');
 
 ?>
 <html lang="en">
-<title>Forgot Password</title>
+<title>Reset Password</title>
 
     <head>
         <meta charset="UTF-8">
@@ -22,9 +22,9 @@ include('forgotbackend.php');
     <body>
        <div class="center">
        <div class="logo"><img src="logo.png" width="90" height="90"></div>
-            <h1>Forgot Password</h1>
+            <h1>Reset Password</h1>
             
-            <form action ="forgotpass.php" method="post" id="LoginForm">
+            <form action ="resetpass.php" method="post" id="LoginForm">
             <div class="error2">
             <?php if (isset($_GET['error'])){?>
             <p class ="error"><?php echo $_GET['error']; ?></p>
@@ -38,14 +38,21 @@ include('forgotbackend.php');
             </div>
             
             <?php } ?>
-                <div class="txt_field">
-                <input type="text" name="username" id="user">
-                <span></span>
-                <label>Username</label>
-                </div>
-              
                 
-                <button id="login" name="send" class="log">SEND LINK</button>
+                <div class="txt_field">
+                <input type="password" name="newpassword" id="pass" minlength="8">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <span></span>
+                <label >New Password</label>
+                </div>
+                <div class="txt_field">
+                <input type="password" name="confirmpassword" id="pass">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <span></span>
+                <label class="label1">New Password</label>
+                </div>
+                
+                <button id="login" name="reset" class="log">RESET</button>
            
                 <br>
                 
@@ -57,8 +64,7 @@ include('forgotbackend.php');
                 
             </form>
             
-       
-        <button name="back" class="log2"><b>BACK<b></button
+
 
         </div>
      
