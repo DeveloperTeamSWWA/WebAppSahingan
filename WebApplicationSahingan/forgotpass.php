@@ -54,13 +54,12 @@ include('forgotbackend.php');
                  
                 </div>
               
-                
+                <button name="back" class="log2"><b>BACK<b></button>
             </form>
             
-       
-        <button name="back" class="log2"><b>BACK<b></button
+        
+      
 
-        </div>
      
 
     </body>
