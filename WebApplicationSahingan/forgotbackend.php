@@ -16,7 +16,7 @@ if(isset($_POST['send'])){
         require_once "PHPMailer/Exception.php";
         
          $mail = new PHPMailer;
-         $mail->isSMTP();                                      // Set mailer to use SMTP
+         $mail->isMail();                                      // Set mailer to use SMTP
          $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
          $mail->SMTPAuth = true;                               // Enable SMTP authentication
          $mail->Username = 'developerteamswwa@gmail.com';                 // SMTP username
