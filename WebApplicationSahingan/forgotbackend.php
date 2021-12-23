@@ -20,7 +20,8 @@ if(isset($_POST['send'])){
          $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
          $mail->SMTPAuth = true;                               // Enable SMTP authentication
          $mail->Username = 'developerteamswwa@gmail.com';                 // SMTP username
-         $mail->Password = 'SWWAssociation';                           // SMTP password
+         $mail->Password = 'SWWAssociation';  
+         $mail->From = "developerteamswwa@gmail.com";                         // SMTP password
          $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
          $mail->Port = 587;                                    // TCP port to connect to
          
