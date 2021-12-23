@@ -18,11 +18,11 @@ if(isset($_POST['send'])){
          $mail = new PHPMailer;
          $mail->isSMTP();                                      // Set mailer to use SMTP
          $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-         $mail->SMTPAuth = true;                               // Enable SMTP authentication
+         $mail->SMTPAuth = false;                               // Enable SMTP authentication
          $mail->Username = 'developerteamswwa@gmail.com';                 // SMTP username
          $mail->Password = 'SWWAssociation';                           // SMTP password
          $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-         $mail->Port = 587;                                    // TCP port to connect to
+         $mail->Port = 25;                                    // TCP port to connect to
          
          $mail->setFrom('developerteamswwa@gmail.com', 'Sahingan Water Works Association');
          $mail->addAddress($email);     // Add a recipient
