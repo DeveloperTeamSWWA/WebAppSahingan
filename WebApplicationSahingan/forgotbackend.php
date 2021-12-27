@@ -17,7 +17,8 @@ if(isset($_POST['send'])){
         
          $mail = new PHPMailer;
          $mail->isSMTP();                                      // Set mailer to use SMTP
-         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+         $mail->Host = 'smtp.gmail.com';
+         $this->mail->SMTPDebug = 3;  // Specify main and backup SMTP servers
          $mail->SMTPAuth = true;                          // Enable SMTP authentication
          $mail->Username = 'developerteamswwa@gmail.com';                 // SMTP username
          $mail->Password = 'SWWAssociation';                           // SMTP password
