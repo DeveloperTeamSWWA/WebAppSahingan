@@ -45,7 +45,7 @@ include('forgotbackend.php');
                 </div>
               
                 
-                <button id="login" name="send" class="log">SEND LINK</button>
+                <button id="login" name="send" class="log">SEND MAIL</button>
            
                 <br>
                 
