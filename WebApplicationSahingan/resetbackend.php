@@ -5,6 +5,7 @@ include('dbcon.php');
 $reference = $database->getReference('Login')->getChild('Sahingan');
 $user = $reference->getChild('Username')->getValue();
 $pass = $reference->getChild('Password')->getValue();
+$email = $reference->getChild('Email')->getValue();
 $as = $reference->getChild('as')->getValue();
 if(isset($_POST['reset'])){
     
@@ -18,7 +19,7 @@ if(isset($_POST['reset'])){
         if($newpassword == $confirmpassword){
             $database->getReference("Login/Sahingan")
             ->set([
-                
+             'Email' => $email,
              'Username' => $user,
              'Password' => $confirmpassword,
              'as'=> $as,
